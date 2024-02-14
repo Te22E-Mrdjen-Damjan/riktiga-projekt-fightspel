@@ -13,7 +13,7 @@ public class App {
         // Start program-loop
         System.out.println("Menu");
         System.out.println("1-Starta Spel");
-        System.out.println("2-regler");
+        
         boolean spelstart = false;
         val = tangentbord.nextLine();
 
