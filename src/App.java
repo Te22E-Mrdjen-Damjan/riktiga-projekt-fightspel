@@ -1,8 +1,8 @@
-import java.time.chrono.HijrahEra;
+
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
+
 
 public class App {
 
@@ -37,7 +37,7 @@ public class App {
                 if (slumptal==1 ){
                     // Minska fiendeliv med 20
                     fiendeliv = fiendeliv -20;
-                    System.out.println("du skadade fiende med 20 liv, "+fiendeliv);
+                    System.out.println("Du skadade fiende med 20 liv, "+fiendeliv);
 
                 }
                 else{
@@ -45,16 +45,24 @@ public class App {
                 }
 
                 // Hämta slumptal för finenden
-                if (slumptal2==0){
+                if (slumptal2==1){
                     spelareliv = spelareliv -20;
-                    System.out.println("du blev skadad med 20 liv, "+fiendeliv);
+                    System.out.println("Du blev skadad med 20 liv, "+spelareliv);
                 }
-                // Om fienden  träffar
+                else{
+                  System.out.println("Fienden missade");  
+                }
+                if (spelareliv==0){System.out.println("Du förlorade");
+                spelstart=false;
+                }
+                if(fiendeliv==0){System.out.println("Du Vann!");
+                spelstart=false;
+                }
+                if(spelareliv==0&&fiendeliv==0){System.out.println("Draw");
+                spelstart=false;
+                }
+            // Slut program-loop1
 
-                // Minska spelarliv med 20
-            
-            
-            // Slut program-loop
         }
     }
 }   
