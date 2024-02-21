@@ -43,7 +43,7 @@ public class App {
                 else{
                     System.out.println("Du missade");
                 }
-
+// kommntar
                 // Hämta slumptal för finenden
                 if (slumptal2==1){
                     spelareliv = spelareliv -20;
